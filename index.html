@@ -29,6 +29,14 @@
         vertical-align: middle;        /* keep it centered with the English text */
         }
 
+          .profile-photo {
+          width: 100%;
+          max-width: 420px;
+          aspect-ratio: 1 / 1;
+          object-fit: cover;
+          border-radius: 50%;
+          }
+
   </style>
 
 
@@ -64,7 +72,7 @@
   <div class="w3-padding-64 w3-text-light-grey w3-large" style="font-weight:bold">
     <a href="#home" class="w3-bar-item w3-button">Bio</a>
     <a href="#education" class="w3-bar-item w3-button">Edu</a>
-    <a href="#location" class="w3-bar-item w3-button">Home</a>
+    <a href="#location" class="w3-bar-item w3-button">Towns</a>
   </div>
 </nav>
 
@@ -72,7 +80,6 @@
 <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
   <div class="w3-bar-item w3-padding-24">SHUYUAN</div>
   <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right"  style="font-stretch: extra-expanded;" onclick="w3_open()"><b>≡</b></a>
-  </div>
 </header>
 
 <!-- Overlay effect when opening sidebar on small screens -->
@@ -90,55 +97,55 @@
 
 
 <!-- The Home Section -->
-    <div class="w3-container w3-center w3-padding-32" id="home" style="width: 1200px;">
-      <img style="width: 45%;max-width: 520px" alt="profile photo" src="data/Shuyuan_2.jpg">
-      <h1>Shuyuan Wang</h1>
-      <p class="w3-center">
-        <em> Last Update: Nov. 2025 </em>
-      </p>
+  <div class="w3-container w3-padding-32" id="home" style="max-width: 1000px; margin-left:auto; margin-right:auto;">
+      <div class="w3-row-padding" style="max-width:1000px;margin-left:auto;margin-right:auto;">
+        <!-- Left: photo -->
+        <div class="w3-col l5 m12 w3-center">
+          <img class="w3-image profile-photo" alt="profile photo" src="data/Shuyuan_2.jpg">
+        </div>
 
+        <!-- Right: text -->
+        <div class="w3-col l7 m12">
+          <h1 class="w3-center">Shuyuan Wang</h1>
+          <p class="w3-center"><em> Last Update: Nov. 2025 </em></p>
 
-      <p class="w3-justify" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;max-width:1000px">
-        I am a Ph.D. student in <b><a href="https://www.gabamrs.com/edden" class="sylink">Prof. Richard Edden</a></b>'s group at the Johns Hopkins University School of Medicine, developing robotic approaches to advance <em>in vivo</em> Magnetic Resonance Spectroscopy (MRS) in the brain.
+          <p class="w3-justify">
+            I am a Ph.D. student in <b><a href="https://www.gabamrs.com/edden" class="sylink">Prof. Richard Edden</a></b>'s group at the Johns Hopkins University School of Medicine, developing robotic approaches to advance <em>in vivo</em> Magnetic Resonance Spectroscopy (MRS) in the brain.
+          </p>
 
-      <p class="w3-justify" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;max-width:1000px">
-        Previously, I earned my master's degree from Hopkins Mechanical Engineering, where I explored the intersection of control theory and animal sensorimotor behavior with <b><a href="https://limbs.lcsr.jhu.edu/people/cowan/" class="sylink">Prof. Noah Cowan</a></b>. Piror to that, I obtained my bachelor's degree at the Southern University of Science and Technology in China, where I studied soft robotics and advanced actuation with <b><a href="https://wanglab.mee.sustech.edu.cn/people.html" class="sylink">Prof. Hongqiang Wang</a></b>.
+          <p class="w3-justify">
+            Previously, I earned my master's degree from Hopkins Mechanical Engineering, where I explored the intersection of control theory and animal sensorimotor behavior with <b><a href="https://limbs.lcsr.jhu.edu/people/cowan/" class="sylink">Prof. Noah Cowan</a></b>. Piror to that, I obtained my bachelor's degree at the Southern University of Science and Technology in China, where I studied soft robotics and advanced actuation with <b><a href="https://wanglab.mee.sustech.edu.cn/people.html" class="sylink">Prof. Hongqiang Wang</a></b>.
+          </p>
 
+          <p class="w3-center">
+            <!-- Email -->
+            <a href="mailto:swang340@jhu.edu" target="_blank" style="color:#2497f4; text-decoration:none; margin:0 10px;">
+              <i class="fa-solid fa-envelope" style="font-size:28px;"></i>
+            </a>
 
-        <p class="w3-center">
+            <!-- CV -->
+            <a href="data/cv.pdf" target="_blank" style="color:#bababa; text-decoration:none; margin:0 10px;">
+              <i class="fa-solid fa-file-lines" style="font-size:28px;"></i>
+            </a>
 
-          <!-- Email -->
-          <a href="mailto:swang340@jhu.edu" target="_blank" style="color:#2497f4; text-decoration:none; margin:0 10px;">
-            <i class="fa-solid fa-envelope" style="font-size:28px;"></i>
-          </a>
+            <!-- Google Scholar -->
+            <a href="https://scholar.google.com/citations?hl=en&user=luW6zfoAAAAJ" target="_blank" style="color:#4285F4; text-decoration:none; margin:0 10px;">
+              <i class="fa-brands fa-google-scholar" style="font-size:28px;"></i>
+            </a>
 
-          <!-- CV -->
-          <a href="data/cv.pdf" target="_blank" style="color:#bababa; text-decoration:none; margin:0 10px;">
-            <i class="fa-solid fa-file-lines" style="font-size:28px;"></i>
-          </a>
+            <!-- GitHub -->
+            <a href="https://github.com/ShuyuanWang7" target="_blank" style="color:#171515; text-decoration:none; margin:0 10px;">
+              <i class="fa-brands fa-github" style="font-size:28px;"></i>
+            </a>
 
-          
-          <!-- Google Scholar -->
-          <a href="https://scholar.google.com/citations?hl=en&user=luW6zfoAAAAJ" target="_blank" style="color:#4285F4; text-decoration:none; margin:0 10px;">
-            <i class="fa-brands fa-google-scholar" style="font-size:28px;"></i>
-          </a>
-
-          <!-- GitHub -->
-          <a href="https://github.com/ShuyuanWang7" target="_blank" style="color:#171515; text-decoration:none; margin:0 10px;">
-            <i class="fa-brands fa-github" style="font-size:28px;"></i>
-          </a>
-
-          <!-- Instagram -->
-          <a href="https://www.instagram.com/melowang117/" target="_blank" style="color:#E4405F; text-decoration:none; margin:0 10px;">
-            <i class="fa-brands fa-instagram" style="font-size:28px;"></i>
-          </a>
-
-
-
-
-        </p>
-        </tbody></table>
-  </div>
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/melowang117/" target="_blank" style="color:#E4405F; text-decoration:none; margin:0 10px;">
+              <i class="fa-brands fa-instagram" style="font-size:28px;"></i>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
 
 
 
@@ -151,7 +158,7 @@
 
 
 <!-- The Education Section -->
-  <div class="w3-container w3-light-grey w3-padding-32" id="education"  style="width: 1200px;">
+  <div class="w3-container w3-light-grey w3-padding-32" id="education" style="max-width: 1000px; margin-left:auto; margin-right:auto;">
    <h2>Education</h2>
 
 
@@ -211,19 +218,19 @@
 
 
   <!-- The Location Section -->
-  <div class="w3-container w3-padding-32" id="location" style="width: 1200px;">
-   <h2>Town</h2>
+  <div class="w3-container w3-padding-32" id="location" style="max-width: 1000px; margin-left:auto; margin-right:auto;">
+   <h2>Towns</h2>
 
 
 
   <div class="w3-half">
-    <p  style="max-width: 500px; margin: 0 auto; text-align: left;">I grew up in Hohhot, a beautiful town at the intersection of Chinese (晋), Mongolian (<span class="mn-vert">ᠮᠣᠩᠭᠣᠯ</span>),
+    <p  style="max-width: 460px; margin: 0 auto; text-align: left;">I grew up in Hohhot, a beautiful town at the intersection of Chinese (晋), Mongolian (<span class="mn-vert">ᠮᠣᠩᠭᠣᠯ</span>),
   and Muslim (خُوِزُو) cultures.
 
 </p> 
 <br>
 <div class="w3-center">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96623.81857550715!2d111.56547327808265!3d40.81710450633991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3606462a4a60d3e1%3A0x7f72c427fe44f504!2sHohhot%2C%20Inner%20Mongolia%2C%20China!5e0!3m2!1sen!2sus!4v1763583200025!5m2!1sen!2sus" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96623.81857550715!2d111.56547327808265!3d40.81710450633991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3606462a4a60d3e1%3A0x7f72c427fe44f504!2sHohhot%2C%20Inner%20Mongolia%2C%20China!5e0!3m2!1sen!2sus!4v1763583200025!5m2!1sen!2sus" style="width:100%; max-width:420px; height:350px; border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
   </div>
   
@@ -232,10 +239,10 @@
 
 
   <div class="w3-half">
-     <p  style="max-width: 500px; margin: 0 auto; text-align: left;">I am now pursuing my Ph.D. degree in Baltimore, MD, home to the Ravens Flock 🐦‍⬛🏈</p>
+     <p  style="max-width: 460px; margin: 0 auto; text-align: left;">I am now pursuing my Ph.D. degree in Baltimore, MD, home to the Ravens Flock 🐦‍⬛🏈</p>
       <br>
      <div class="w3-center">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d98820.85419814175!2d-76.70288571475967!3d39.28481023278621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c803aed6f483b7%3A0x44896a84223e758!2sBaltimore%2C%20MD!5e0!3m2!1sen!2sus!4v1763584320524!5m2!1sen!2sus" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d98820.85419814175!2d-76.70288571475967!3d39.28481023278621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c803aed6f483b7%3A0x44896a84223e758!2sBaltimore%2C%20MD!5e0!3m2!1sen!2sus!4v1763584320524!5m2!1sen!2sus" style="width:100%; max-width:420px; height:350px; border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
 
      </div>
@@ -244,8 +251,7 @@
 
   </div>
 
-
-
+  </div>
 
 </body>
 </html>
